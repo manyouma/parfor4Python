@@ -3,7 +3,7 @@ import multiprocessing as mp
 import time
 from PrimeNumber import isitPrime
 
-
+print(f'Total num CPUs: {mp.cpu_count()+1}')
 for num_core in np.arange(mp.cpu_count()):
     p = mp.Pool(num_core+1)
     m = 10000000
