@@ -8,7 +8,7 @@ for num_core in np.arange(mp.cpu_count()):
     p = mp.Pool(num_core+1)
     m = 10000000
     tic = time.time()
-    isPrimes = p.map(isitPrime, range(2, m+1))
+    isPrimes = p.map(isitPrime, range(2, m+1)) # we want to check all integers starting from 2
     nPrimes = sum(isPrimes)
     toc = time.time() - tic
     p.close()
