@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --account=rrg-vincentw
+#SBATCH --account=###
 #SBATCH --cpus-per-task=20
 #SBATCH --mem=16000M       # Memory proportional to GPUs: 32000 Cedar, 64000 Graham.
 #SBATCH --time=00-1:00:00
